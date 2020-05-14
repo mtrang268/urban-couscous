@@ -1,9 +1,8 @@
-package com.adhoc;
+package com.adhoc.proto;
 
-import com.adhoc.entity.Constants;
-import com.adhoc.entity.Header;
-import com.adhoc.entity.Record;
-import com.adhoc.entity.RecordFactory;
+import com.adhoc.proto.entity.Constants;
+import com.adhoc.proto.entity.Header;
+import com.adhoc.proto.entity.Record;
 import com.google.common.base.Preconditions;
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.DefaultParser;
@@ -70,7 +69,7 @@ public class App {
                     Constants.MAGIC_STRING, header.getMagicString()));
 
             List<Record> records = new ArrayList<>();
-            RecordFactory recordFactory = new RecordFactory(inputStream);
+            Record.RecordFactory recordFactory = new Record.RecordFactory(inputStream);
             for (int i = 0; i < header.getNumRecords(); i++) {
                 records.add(recordFactory.getRecord());
             }

@@ -1,4 +1,4 @@
-package com.adhoc.entity;
+package com.adhoc.proto.entity;
 
 import com.google.common.base.Preconditions;
 

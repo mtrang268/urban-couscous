@@ -1,10 +1,10 @@
-package com.adhoc.entity;
+package com.adhoc.proto.entity;
 
 import com.google.common.base.Preconditions;
 import java.nio.ByteBuffer;
 import java.util.Objects;
 
-public class Header {
+public final class Header {
     private static final int NUM_MAGIC_STRING_BYTES = 4;
     private final String magicString;
     private final byte version;

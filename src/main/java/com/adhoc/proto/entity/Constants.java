@@ -1,4 +1,4 @@
-package com.adhoc.entity;
+package com.adhoc.proto.entity;
 
 public final class Constants {
     public static final String MAGIC_STRING = "MPS7";
